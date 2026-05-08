@@ -15,6 +15,11 @@ Each script represents a new concept I've learned. The project grows with every 
 
 ## Current analysis
 
+### Interactive driver comparison tool
+Select any two drivers from the full grid and compare their lap time evolution and speed trace side by side. Built with matplotlib widgets.
+
+![Interactive selector](assets/miami2026_selector.png)
+
 ### Lap time evolution + pit stop strategy
 Compare two drivers lap-by-lap, with automatic pit stop detection, tyre compound labels and interactive tooltips.
 
@@ -29,13 +34,16 @@ Compare two drivers lap-by-lap, with automatic pit stop detection, tyre compound
 
 ## Roadmap
 
-- [x] Lap time evolution with tyre compound
+- [x] Lap time evolution with tyre compound labels
 - [x] Pit stop detection and visualization
 - [x] Interactive tooltips (lap number + exact time)
-- [ ] Speed trace — sector by sector telemetry comparison
+- [x] Speed trace — fastest lap telemetry comparison
+- [x] Interactive driver selector — full grid, any combination
+- [x] Automatic team colors per driver
 - [ ] Tyre degradation model (regression per compound)
 - [ ] Undercut detector — automated strategy analysis
-- [ ] Multi-driver comparison (full grid)
+- [ ] Multi-GP comparison — same circuit across seasons
+- [ ] Sector time breakdown (S1, S2, S3)
 
 ---
 
@@ -44,7 +52,7 @@ Compare two drivers lap-by-lap, with automatic pit stop detection, tyre compound
 - Python 3.11
 - [FastF1](https://github.com/theOehrly/Fast-F1) — F1 telemetry and timing data
 - pandas — data manipulation
-- matplotlib — visualization
+- matplotlib — visualization + interactive widgets
 - mplcursors — interactive tooltips
 
 ---
